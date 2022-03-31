@@ -20,17 +20,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Chakra Petch', sans-serif;
+        font-family: "Chakra Petch", sans-serif;
+        background-image: linear-gradient(to right, red, purple, blue);
+      }
+      .instructions {
+        font-size: smaller;
+      }
+      .title{
+        font-size: x-large;
       }
 
-      canvas{
-          box-shadow: black 20px 10px 50px;
+      canvas {
+        box-shadow: black 20px 10px 50px;
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>GameOfSnake</h1>
+    <div class="title">
+      <h1>GameOfSnake</h1>
+    </div>
+    <div class="instructions">
+      <h2>Use arrow keys for movement,Yellow represents the Snake head.</h2>
+    </div>
+
     <canvas id="game" width="575" height="575" />
+
     <script src="index.js"></script>
   </body>
 </html>
